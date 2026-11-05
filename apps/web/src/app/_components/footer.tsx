@@ -1,4 +1,5 @@
 import Container from "@/app/_components/container";
+import Link from "next/link";
 import { SOURCE_URL } from "@/lib/site";
 
 export function Footer() {
@@ -13,6 +14,12 @@ export function Footer() {
             <p className="mx-3 mb-4 lg:mb-0 text-center lg:text-left">
               A showcase built on Orunbase, running on Cloudflare Workers.
             </p>
+            <Link href="/about" className="mx-3 mb-4 lg:mb-0 font-bold hover:underline">
+              About
+            </Link>
+            <a href="/feed.xml" className="mx-3 mb-4 lg:mb-0 font-bold hover:underline">
+              RSS
+            </a>
             <a href={SOURCE_URL} className="mx-3 font-bold hover:underline whitespace-nowrap">
               View on GitHub
             </a>
