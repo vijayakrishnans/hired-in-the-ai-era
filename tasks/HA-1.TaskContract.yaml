@@ -1,0 +1,11 @@
+apiVersion: orun.io/v1
+kind: TaskContract
+spec:
+  goal: The Hired in the AI Era epic's design doc set is on main.
+  affects:
+    - specs/epics/hired-in-the-ai-era-launch/**
+    - tasks/**
+  doneWhen:
+    - The five documents are on main under specs/epics/hired-in-the-ai-era-launch.
+    - This contract is on main under tasks/.
+  gates: []
