@@ -12,7 +12,7 @@ A reader may act on this advice, and hiring claims go stale. Articles give reaso
 
 ## HA-C — Public repository (RESOLVED)
 
-The baseline defaults to private. this is a showcase, so the repository is created public. Nothing secret lives in it: credentials are brokered.
+The baseline defaults to private. This is a showcase, so the repository is created public. Nothing secret lives in it: credentials are brokered.
 
 ## HA-D — No custom domain (ACCEPTED)
 
