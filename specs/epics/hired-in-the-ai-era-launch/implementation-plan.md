@@ -27,7 +27,7 @@ The site stops looking like a starter: intro copy, palette, original cover image
 - the home page renders the site's own identity on prod
 - the repository's tests, typecheck and build are green
 
-## HA3 — the articles
+## HA3 — the articles ✅
 
 Five articles, one task each or together if reviewed together:
 

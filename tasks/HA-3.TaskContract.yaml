@@ -1,0 +1,18 @@
+apiVersion: orun.io/v1
+kind: TaskContract
+metadata:
+  name: HA-3
+spec:
+  goal: The five launch articles are published with their own cover images.
+  affects:
+    - default/hired-in-the-ai-era/web
+    - default/hired-in-the-ai-era/web-tests
+    - apps/web/_posts/**
+    - apps/web/public/assets/blog/**
+    - tests/web/**
+    - tasks/**
+    - specs/epics/hired-in-the-ai-era-launch/**
+  doneWhen:
+    - All five articles are readable on prod.
+    - No figure, quote or anecdote is invented.
+  gates: []

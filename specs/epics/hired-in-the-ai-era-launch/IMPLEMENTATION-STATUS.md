@@ -6,8 +6,8 @@ As-built ≠ intent. This file records what actually shipped, and every place th
 |---|---|---|
 | HA0 — the spec | ✅ | #4 |
 | HA1 — live site | ✅ | #1, #2, #3 (the build) |
-| HA2 — its own brand | ✅ | this PR |
-| HA3 — the articles | | |
+| HA2 — its own brand | ✅ | #5 |
+| HA3 — the articles | ✅ | this PR |
 | HA4 — ready to show | | |
 
 ## Departures from the design
