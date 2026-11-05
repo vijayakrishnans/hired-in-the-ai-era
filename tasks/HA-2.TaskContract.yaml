@@ -1,5 +1,7 @@
 apiVersion: orun.io/v1
 kind: TaskContract
+metadata:
+  name: HA-2
 spec:
   goal: The site carries its own brand, with no starter copy or sample post left.
   affects:
