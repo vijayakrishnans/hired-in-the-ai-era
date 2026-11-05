@@ -5,6 +5,8 @@ metadata:
 spec:
   goal: The site carries its own brand, with no starter copy or sample post left.
   affects:
+    - default/hired-in-the-ai-era/web
+    - default/hired-in-the-ai-era/web-tests
     - apps/web/**
     - tests/web/**
     - ai/context/**
