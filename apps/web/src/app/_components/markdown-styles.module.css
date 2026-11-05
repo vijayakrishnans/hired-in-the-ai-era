@@ -16,3 +16,24 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown h2,
+.markdown h3 {
+  @apply font-bold tracking-tight;
+}
+
+.markdown ul {
+  @apply list-disc pl-6;
+}
+
+.markdown ol {
+  @apply list-decimal pl-6;
+}
+
+.markdown li {
+  @apply my-2;
+}
+
+.markdown a {
+  @apply underline underline-offset-2 hover:text-blue-600;
+}

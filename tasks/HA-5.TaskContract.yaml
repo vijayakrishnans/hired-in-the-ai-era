@@ -1,0 +1,15 @@
+apiVersion: orun.io/v1
+kind: TaskContract
+metadata:
+  name: HA-5
+spec:
+  goal: Articles read properly, with visible list markers and links, firm headings and a proportionate headline.
+  affects:
+    - default/hired-in-the-ai-era/web
+    - apps/web/**
+    - tasks/**
+    - specs/epics/hired-in-the-ai-era-launch/**
+  doneWhen:
+    - Numbered and bulleted lists show their markers on prod.
+    - Links inside articles are visibly links on prod.
+  gates: []
