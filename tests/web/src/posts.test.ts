@@ -13,13 +13,21 @@ describe("posts loader (apps/web/src/lib/api.ts)", () => {
   it("lists every markdown post, newest first", async () => {
     const { getAllPosts, getPostSlugs } = await import("@/lib/api");
     const slugs = getPostSlugs();
-    expect(slugs.length).toBeGreaterThanOrEqual(1);
+    expect(slugs.length).toBeGreaterThanOrEqual(5);
     const posts = getAllPosts();
     expect(posts.map((p) => p.slug).sort()).toEqual(
       slugs.map((s) => s.replace(/\.md$/, "")).sort(),
     );
     for (let i = 1; i < posts.length; i++) {
       expect(posts[i - 1]!.date >= posts[i]!.date).toBe(true);
+    }
+  });
+
+  it("gives every post a cover image that exists", async () => {
+    const { existsSync } = await import("node:fs");
+    const { getAllPosts } = await import("@/lib/api");
+    for (const post of getAllPosts()) {
+      expect(existsSync(path.join(appDir, "public", post.coverImage))).toBe(true);
     }
   });
 
