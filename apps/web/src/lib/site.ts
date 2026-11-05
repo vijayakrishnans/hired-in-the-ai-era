@@ -6,6 +6,9 @@
 export const SITE_NAME = "Hired in the AI Era";
 export const SOURCE_URL = "https://github.com/vijayakrishnans/hired-in-the-ai-era";
 
+export const SITE_DESCRIPTION =
+  "Practical, honest advice on getting a job in the AI era: what changed, what didn't, and what to do about it.";
+
 // The site's public origin, which makes the posts' Open Graph images absolute.
 // The deploy sets it per environment (apps/web/component.yaml); a local build
 // falls back to the dev server.

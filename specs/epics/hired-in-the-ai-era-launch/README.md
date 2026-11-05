@@ -8,14 +8,14 @@ It is for job seekers and career changers, and it is a showcase of a product bui
 
 | Field | Value |
 |-------|-------|
-| Status | In progress |
+| Status | ✅ Shipped |
 | Cluster | **HA** (HA0–HA4) |
 | Owner(s) | `apps/web` (the site and its posts) |
 | Builds on | `blog-starter baseline-v3`: one Next.js Worker with Static Assets, Markdown posts in `apps/web/_posts` |
 | Changes | Adds brand, articles, an about page, RSS and a sitemap; adds no provider, database or account system |
 | Decisions locked | (1) Articles stay Markdown in the repository. (2) No invented statistics, quotes or success stories. (3) Cloudflare is the only provider. |
 | Gate | HA1 is the baseline's own build. HA2 is the first visible change to the product. |
-| Shipped as | |
+| Shipped as | https://hired-in-the-ai-era-web-prod.vijayakrishnan12994.workers.dev |
 
 ## Read order
 

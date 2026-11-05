@@ -41,7 +41,7 @@ Five articles, one task each or together if reviewed together:
 - all five are readable on prod with their own cover images
 - every figure in them has a source a reader can follow, and none is invented
 
-## HA4 — ready to show
+## HA4 — ready to show ✅
 
 **Done when**
 - `/about`, `/feed.xml` and `/sitemap.xml` answer 200 on prod and the last two validate as XML

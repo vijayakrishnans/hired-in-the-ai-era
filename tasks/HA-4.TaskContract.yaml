@@ -1,0 +1,17 @@
+apiVersion: orun.io/v1
+kind: TaskContract
+metadata:
+  name: HA-4
+spec:
+  goal: The site has an about page, RSS, a sitemap and working social cards.
+  affects:
+    - default/hired-in-the-ai-era/web
+    - default/hired-in-the-ai-era/web-tests
+    - apps/web/**
+    - tests/web/**
+    - tasks/**
+    - specs/epics/hired-in-the-ai-era-launch/**
+  doneWhen:
+    - /about, /feed.xml and /sitemap.xml answer 200 on prod, and the last two are valid XML.
+    - An article page has Open Graph tags with an absolute image URL on prod's origin.
+  gates: []

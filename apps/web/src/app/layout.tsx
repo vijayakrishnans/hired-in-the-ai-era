@@ -1,6 +1,6 @@
 import Footer from "@/app/_components/footer";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
-import { SITE_NAME, SITE_ORIGIN } from "@/lib/site";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_ORIGIN } from "@/lib/site";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
   },
-  description: "Practical, honest advice on getting a job in the AI era: what changed, what didn't, and what to do about it.",
+  description: SITE_DESCRIPTION,
   openGraph: {
     siteName: SITE_NAME,
     images: [HOME_OG_IMAGE_URL],
@@ -61,7 +61,12 @@ export default function RootLayout({
           content="/favicon/browserconfig.xml"
         />
         <meta name="theme-color" content="#16213A" />
-        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={SITE_NAME}
+          href="/feed.xml"
+        />
       </head>
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
