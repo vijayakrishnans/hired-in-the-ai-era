@@ -19,9 +19,9 @@
 | surface | URL | status |
 |---|---|---|
 | site (stage) | https://hired-in-the-ai-era-web-stage.vijayakrishnan12994.workers.dev | LIVE (200) |
-| post (stage) | https://hired-in-the-ai-era-web-stage.vijayakrishnan12994.workers.dev/posts/hello-world | LIVE (200) |
+| post (stage) | https://hired-in-the-ai-era-web-stage.vijayakrishnan12994.workers.dev/posts/what-ai-changed-about-getting-hired | LIVE (200) |
 | site (prod) | https://hired-in-the-ai-era-web-prod.vijayakrishnan12994.workers.dev | LIVE (200) |
-| post (prod) | https://hired-in-the-ai-era-web-prod.vijayakrishnan12994.workers.dev/posts/hello-world | LIVE (200) |
+| post (prod) | https://hired-in-the-ai-era-web-prod.vijayakrishnan12994.workers.dev/posts/what-ai-changed-about-getting-hired | LIVE (200) |
 
 Public origins the builds bake into absolute links: stage `https://hired-in-the-ai-era-web-stage.vijayakrishnan12994.workers.dev`,
 prod `https://hired-in-the-ai-era-web-prod.vijayakrishnan12994.workers.dev`. The `dev` environment is verify-only by design — no

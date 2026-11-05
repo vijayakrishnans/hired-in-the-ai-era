@@ -76,7 +76,7 @@ spec:
     # carries an `&` or `'`), and a post renders from the pre-rendered set.
     # Each response is buffered before grep so an early match cannot SIGPIPE
     # curl.
-    smokeCommand: "html=$(curl -sfL \"${DEPLOYED_URL}/\") && echo \"${html}\" | grep -q 'href=\"/posts/' && post=$(curl -sfL \"${DEPLOYED_URL}/posts/hello-world\") && echo \"${post}\" | grep -q '<article'"
+    smokeCommand: "html=$(curl -sfL \"${DEPLOYED_URL}/\") && echo \"${html}\" | grep -q 'href=\"/posts/' && post=$(curl -sfL \"${DEPLOYED_URL}/posts/what-ai-changed-about-getting-hired\") && echo \"${post}\" | grep -q '<article'"
   labels:
     team: platform
     layer: delivery

@@ -2,7 +2,7 @@
 
 Milestones land in order. Each is one or more tasks, each task one pull request. A milestone is marked ✅ here when its "done when" list is true, and recorded in `IMPLEMENTATION-STATUS.md`.
 
-## HA0 — the spec
+## HA0 — the spec ✅
 
 This doc set, merged to `main`.
 
@@ -10,7 +10,7 @@ This doc set, merged to `main`.
 - the five documents are on `main`
 - the epic shows its milestones in Orunbase
 
-## HA1 — live site
+## HA1 — live site ✅
 
 The baseline's own bootstrap: repository, brokered credentials, stage and prod.
 
@@ -18,7 +18,7 @@ The baseline's own bootstrap: repository, brokered credentials, stage and prod.
 - the Worker answers on stage and prod on `workers.dev`
 - a merge to `main` redeploys both
 
-## HA2 — its own brand
+## HA2 — its own brand ✅
 
 The site stops looking like a starter: intro copy, palette, original cover images, and the three sample posts removed.
 

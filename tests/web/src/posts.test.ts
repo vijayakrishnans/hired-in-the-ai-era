@@ -13,7 +13,7 @@ describe("posts loader (apps/web/src/lib/api.ts)", () => {
   it("lists every markdown post, newest first", async () => {
     const { getAllPosts, getPostSlugs } = await import("@/lib/api");
     const slugs = getPostSlugs();
-    expect(slugs.length).toBeGreaterThanOrEqual(3);
+    expect(slugs.length).toBeGreaterThanOrEqual(1);
     const posts = getAllPosts();
     expect(posts.map((p) => p.slug).sort()).toEqual(
       slugs.map((s) => s.replace(/\.md$/, "")).sort(),
@@ -25,8 +25,8 @@ describe("posts loader (apps/web/src/lib/api.ts)", () => {
 
   it("reads a post's front matter and body by slug", async () => {
     const { getPostBySlug } = await import("@/lib/api");
-    const post = getPostBySlug("hello-world.md");
-    expect(post.slug).toBe("hello-world");
+    const post = getPostBySlug("what-ai-changed-about-getting-hired.md");
+    expect(post.slug).toBe("what-ai-changed-about-getting-hired");
     expect(post.title).toBeTruthy();
     expect(post.author.name).toBeTruthy();
     expect(post.content.trim().length).toBeGreaterThan(0);
