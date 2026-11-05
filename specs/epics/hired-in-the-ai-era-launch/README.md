@@ -8,7 +8,7 @@ It is for job seekers and career changers, and it is a showcase of a product bui
 
 | Field | Value |
 |-------|-------|
-| Status | Draft |
+| Status | In progress |
 | Cluster | **HA** (HA0–HA4) |
 | Owner(s) | `apps/web` (the site and its posts) |
 | Builds on | `blog-starter baseline-v3`: one Next.js Worker with Static Assets, Markdown posts in `apps/web/_posts` |

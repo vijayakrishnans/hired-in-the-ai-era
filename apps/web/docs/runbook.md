@@ -22,7 +22,7 @@ After a deploy the lane runs this smoke against the environment it
 deployed (`ORUN_ENVIRONMENT`); `DEPLOYED_URL` overrides the URL:
 
 ```bash
-html=$(curl -sfL "${DEPLOYED_URL}/") && echo "${html}" | grep -q 'href="/posts/' && post=$(curl -sfL "${DEPLOYED_URL}/posts/hello-world") && echo "${post}" | grep -q '<article'
+html=$(curl -sfL "${DEPLOYED_URL}/") && echo "${html}" | grep -q 'href="/posts/' && post=$(curl -sfL "${DEPLOYED_URL}/posts/what-ai-changed-about-getting-hired") && echo "${post}" | grep -q '<article'
 ```
 
 ## Rollback

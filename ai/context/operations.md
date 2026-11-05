@@ -43,7 +43,7 @@ before anything else.
 3. `apps/web` builds once per environment, with `NEXT_PUBLIC_SITE_URL` set to
    that environment's `SITE_URL` (intent.yaml) or its workers.dev URL, then
    `wrangler deploy` ships `hired-in-the-ai-era-web-<env>` and a smoke test
-   fetches `/` and `/posts/hello-world` from it.
+   fetches `/` and `/posts/what-ai-changed-about-getting-hired` from it.
 4. `prod` deploys after `stage` has converged on the same commit
    (`environments.prod.promotion` in intent.yaml).
 5. **The convergence run is the deployment.** A green run means every
@@ -76,7 +76,7 @@ Caveats that matter:
 ```bash
 # the site on each environment (also recorded, probed, in deployment.md)
 curl -s -o /dev/null -w '%{http_code}\n' https://hired-in-the-ai-era-web-stage.vijayakrishnan12994.workers.dev/
-curl -s -o /dev/null -w '%{http_code}\n' https://hired-in-the-ai-era-web-prod.vijayakrishnan12994.workers.dev/posts/hello-world
+curl -s -o /dev/null -w '%{http_code}\n' https://hired-in-the-ai-era-web-prod.vijayakrishnan12994.workers.dev/posts/what-ai-changed-about-getting-hired
 
 # workspace readiness (integrations + repository link)
 orun integrations list --org <ws> --json && orun cloud check --org <ws>

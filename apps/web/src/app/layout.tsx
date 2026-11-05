@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
   },
-  description: "A statically generated blog using Next.js and Markdown.",
+  description: "Practical, honest advice on getting a job in the AI era: what changed, what didn't, and what to do about it.",
   openGraph: {
     siteName: SITE_NAME,
     images: [HOME_OG_IMAGE_URL],
@@ -52,15 +52,15 @@ export default function RootLayout({
         <link
           rel="mask-icon"
           href="/favicon/safari-pinned-tab.svg"
-          color="#000000"
+          color="#16213A"
         />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-TileColor" content="#16213A" />
         <meta
           name="msapplication-config"
           content="/favicon/browserconfig.xml"
         />
-        <meta name="theme-color" content="#000" />
+        <meta name="theme-color" content="#16213A" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
